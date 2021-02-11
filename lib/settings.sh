@@ -34,6 +34,8 @@ export CLASHX_APP_URL="https://github.com/yichengchen/clashX/releases/download/1
 
 export ITERM2_SNAZZY_URL="https://github.com/sindresorhus/iterm2-snazzy/raw/main/Snazzy.itermcolors"
 export ITERM2_SNAZZY_PATH="$HOME/Downloads"
+
+export NVM_PROGRAME_URL="https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh"
 # Application Extensions
 # export VIM_EXTENSION_ROOT="$HOME/.vim/bundle"
 # export VIM_BLOCKLE_EXTENSION_PATH="$VIM_EXTENSION_ROOT/vim-blockle"

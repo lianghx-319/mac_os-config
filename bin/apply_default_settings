@@ -11,8 +11,8 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 printf "%s\n" "System - Disable automatic termination of inactive apps."
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
-printf "%s\n" "System - Expand save panel by default."
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+# printf "%s\n" "System - Expand save panel by default."
+# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 printf "%s\n" "System - Disable 'Are you sure you want to open this application?' dialog."
 defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -20,8 +20,8 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 printf "%s\n" "System - Increase window resize speed for Cocoa applications."
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
-printf "%s\n" "System - Disable window resume system-wide."
-defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+# printf "%s\n" "System - Disable window resume system-wide."
+# defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 printf "%s\n" "System - Disable auto-correct."
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -54,17 +54,17 @@ defaults write com.apple.BezelServices kDimTime -int 300
 printf "%s\n" "Keyboard - Enable keyboard access for all controls."
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-printf "%s\n" "Keyboard - Set a fast keyboard repeat rate."
-defaults write NSGlobalDomain KeyRepeat -int 0
+# printf "%s\n" "Keyboard - Set a fast keyboard repeat rate."
+# defaults write NSGlobalDomain KeyRepeat -int 0
 
-printf "%s\n" "Keyboard - Disable press-and-hold for keys in favor of key repeat."
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# printf "%s\n" "Keyboard - Disable press-and-hold for keys in favor of key repeat."
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-printf "%s\n" "Trackpad - Map bottom right corner to right-click."
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+# printf "%s\n" "Trackpad - Map bottom right corner to right-click."
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 printf "%s\n" "Trackpad - Use CONTROL (^) with scroll to zoom."
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -73,20 +73,20 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 printf "%s\n" "Trackpad - Follow keyboard focus while zoomed in."
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
-printf "%s\n" "Trackpad - Speed up"
-defaults write com.apple.trackpad.scaling 10
+# printf "%s\n" "Trackpad - Speed up"
+# defaults write com.apple.trackpad.scaling 10
 
 printf "%s\n" "Bluetooth - Increase sound quality for headphones/headsets."
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
-printf "%s\n" "Menu Bar - Show only Bluetooth and Airport."
-for domain in $HOME/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-  defaults write "${domain}" dontAutoLoad -array "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
-done
+# printf "%s\n" "Menu Bar - Show only Bluetooth and Airport."
+# for domain in $HOME/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+#   defaults write "${domain}" dontAutoLoad -array "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
+# done
 
-defaults write com.apple.systemuiserver menuExtras -array \
-  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-  "/System/Library/CoreServices/Menu Extras/AirPort.menu"
+# defaults write com.apple.systemuiserver menuExtras -array \
+#   "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+#   "/System/Library/CoreServices/Menu Extras/AirPort.menu"
 
 printf "%s\n" "Dock - Remove all default app icons."
 defaults write com.apple.dock persistent-apps -array
