@@ -42,8 +42,8 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 printf "%s\n" "System - Automatically restart if system freezes."
 systemsetup -setrestartfreeze on
 
-printf "%s\n" "System - Disable software updates."
-sudo softwareupdate --schedule off
+# printf "%s\n" "System - Disable software updates."
+# sudo softwareupdate --schedule off
 
 printf "%s\n" "Keyboard - Automatically illuminate built-in MacBook keyboard in low light."
 defaults write com.apple.BezelServices kDim -bool true
