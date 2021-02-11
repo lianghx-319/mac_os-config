@@ -66,17 +66,15 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-printf "%s\n" "Trackpad - Enable tap to click for current user and the login screen."
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
 printf "%s\n" "Trackpad - Use CONTROL (^) with scroll to zoom."
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 printf "%s\n" "Trackpad - Follow keyboard focus while zoomed in."
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
+printf "%s\n" "Trackpad - Speed up"
+defaults write com.apple.trackpad.scaling 10
 
 printf "%s\n" "Bluetooth - Increase sound quality for headphones/headsets."
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40

@@ -1,0 +1,17 @@
+#! /usr/bin/env fish 
+
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+# Install fish plugin
+fisher install jorgebucaran/nvm.fish
+
+# install node
+nvm install lts/fermium
+
+nvm use lts/fermium 
+
+# install yarn
+npm install --global yarn
+
+# install pnpm
+npm install -g pnpm
