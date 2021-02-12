@@ -6,19 +6,17 @@
 sudo bash -c "printf '/usr/local/bin/bash\n' >> /etc/shells"
 sudo bash -c "printf '/usr/local/bin/fish\n' >> /etc/shells"
 
-# Fish
-chsh -s /usr/local/bin/fish
-
 # Homebrew
 (
   cd /usr/local/Homebrew
   git config --local core.hooksPath /dev/null
 )
 
-# # Dotfiles
-# rm -f $HOME/.bash_profile
-# install_git_project "https://github.com/bkuhlmann/dotfiles.git" $REPO_DOTFILES "dotfiles" "bin/run i"
-# source $HOME/.bashrc
+# Dotfiles
+(
+  cd ../dotfiles
+  bin/run i
+)
 
-# Yarn Setup
-# install_git_project "https://github.com/bkuhlmann/yarn_setup.git" $REPO_YARN_SETUP "yarn_setup" "bin/run i"
+# Fish
+chsh -s /usr/local/bin/fish
