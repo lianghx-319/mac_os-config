@@ -33,8 +33,7 @@ brew install go
 # brew install fzf
 # https://ranger.github.io/
 # brew install ranger
-
-
+brew install --HEAD neovim
 
 # git tools
 # brew install git
