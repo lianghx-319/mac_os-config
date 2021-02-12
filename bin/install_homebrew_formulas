@@ -82,7 +82,7 @@ brew install go
 # https://zlib.net/pigz/
 # brew install pigz
 # https://denilson.sa.nom.br/prettyping/
-# brew install prettyping
+brew install prettyping
 # https://github.com/dalance/procs
 # brew install procs
 # https://github.com/Aloxaf/silicon/
