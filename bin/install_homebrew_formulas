@@ -21,12 +21,13 @@ brew install exa
 brew install fd
 # fish shell
 brew install fish
-brew install starship 
+brew install starship
 brew install mas
 # https://github.com/koalaman/shellcheck
 brew install shellcheck
 brew install autojump
 brew install go
+brew install nvm
 # For vim
 # brew install ctags
 # https://github.com/junegunn/fzf

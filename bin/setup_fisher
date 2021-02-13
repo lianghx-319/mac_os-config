@@ -1,20 +1,9 @@
-#! /usr/bin/env bash
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-
+#! /usr/bin/env fish
 # Install fish plugin
-fisher install oh-my-fish/plugin-proxy
-fisher install FabioAntunes/fish-nvm
-fisher install edc/bass
+fisher install oh-my-fish/plugin-proxy FabioAntunes/fish-nvm edc/bass
 
 # install node
-nvm install lts/fermium
+nvm install lts/fermium && nvm use lts/fermium
 
-nvm use lts/fermium 
-
-# install yarn
-npm install --global yarn
-
-# install pnpm
-npm install -g pnpm
-
-gvm install latest
+# install yarn pnpm
+npm install --global yarn pnpm
